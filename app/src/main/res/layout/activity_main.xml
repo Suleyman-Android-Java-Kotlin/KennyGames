@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <ImageView
+        android:id="@+id/kenny2Dikey"
+        android:layout_width="80dp"
+        android:layout_height="95dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:onClick="kennySkor"
+        app:layout_constraintEnd_toStartOf="@+id/kenny3Dikey"
+        app:layout_constraintStart_toEndOf="@+id/kenny1Dikey"
+        app:layout_constraintTop_toTopOf="@+id/kenny1Dikey"
+        app:srcCompat="@drawable/kenny" />
+
+    <ImageView
+        android:id="@+id/kenny3Dikey"
+        android:layout_width="80dp"
+        android:layout_height="95dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="8dp"
+        android:onClick="kennySkor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/kenny2Dikey"
+        app:layout_constraintTop_toTopOf="@+id/kenny2Dikey"
+        app:srcCompat="@drawable/kenny" />
+
+    <ImageView
+        android:id="@+id/kenny4Dikey"
+        android:layout_width="80dp"
+        android:layout_height="95dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:onClick="kennySkor"
+        app:layout_constraintBottom_toTopOf="@+id/kenny7Dikey"
+        app:layout_constraintEnd_toStartOf="@+id/kenny5Dikey"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kenny1Dikey"
+        app:srcCompat="@drawable/kenny" />
+
+    <ImageView
+        android:id="@+id/kenny7Dikey"
+        android:layout_width="80dp"
+        android:layout_height="95dp"
+        android:layout_marginBottom="50dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:onClick="kennySkor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/kenny8Dikey"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kenny4Dikey"
+        app:srcCompat="@drawable/kenny" />
+
+    <ImageView
+        android:id="@+id/kenny5Dikey"
+        android:layout_width="80dp"
+        android:layout_height="95dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:onClick="kennySkor"
+        app:layout_constraintEnd_toStartOf="@+id/kenny6Dikey"
+        app:layout_constraintStart_toEndOf="@+id/kenny4Dikey"
+        app:layout_constraintTop_toTopOf="@+id/kenny4Dikey"
+        app:srcCompat="@drawable/kenny" />
+
+    <ImageView
+        android:id="@+id/kenny6Dikey"
+        android:layout_width="80dp"
+        android:layout_height="95dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="8dp"
+        android:onClick="kennySkor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/kenny5Dikey"
+        app:layout_constraintTop_toTopOf="@+id/kenny5Dikey"
+        app:srcCompat="@drawable/kenny" />
+
+    <ImageView
+        android:id="@+id/kenny1Dikey"
+        android:layout_width="80dp"
+        android:layout_height="95dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="100dp"
+        android:onClick="kennySkor"
+        app:layout_constraintBottom_toTopOf="@+id/kenny4Dikey"
+        app:layout_constraintEnd_toStartOf="@+id/kenny2Dikey"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/kenny" />
+
+    <ImageView
+        android:id="@+id/kenny8Dikey"
+        android:layout_width="80dp"
+        android:layout_height="95dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:onClick="kennySkor"
+        app:layout_constraintBottom_toBottomOf="@+id/kenny7Dikey"
+        app:layout_constraintEnd_toStartOf="@+id/kenny9Dikey"
+        app:layout_constraintStart_toEndOf="@+id/kenny7Dikey"
+        app:layout_constraintTop_toTopOf="@+id/kenny7Dikey"
+        app:srcCompat="@drawable/kenny" />
+
+    <ImageView
+        android:id="@+id/kenny9Dikey"
+        android:layout_width="80dp"
+        android:layout_height="95dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="8dp"
+        android:onClick="kennySkor"
+        app:layout_constraintBottom_toBottomOf="@+id/kenny8Dikey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/kenny8Dikey"
+        app:layout_constraintTop_toTopOf="@+id/kenny8Dikey"
+        app:srcCompat="@drawable/kenny" />
+
+    <TextView
+        android:id="@+id/puanDikey"
+        android:layout_width="136dp"
+        android:layout_height="53dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="Skor: 0"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/saniyeDikey"
+        android:layout_width="136dp"
+        android:layout_height="53dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="30dp"
+        android:text="Zaman: 30"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>
